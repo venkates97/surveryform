@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- user define css -->
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="container cont-1">
+
+        <div class="w-75 h-75 form_ele">
+
+        <form>
+
+            <!-- Name -->
+            <label class="font-weight-bold">Name<span class="ast">*</span></label>
+            <div class="form-row">
+                <div class="col-3">
+                    <input type="text" class="form-control" placeholder="First name" id="Firstname">
+                    <label class="small-text font-weight-lighter" for="Firstname">First</label>
+                </div>
+                <div class="col-3">
+                    <input type="text" class="form-control" placeholder="Last name">
+                    <label class="small-text font-weight-lighter" for="Lastname">Last</label>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label class="font-weight-bold" for="email">Email<span class="ast">*</span></label>
+                <input type="email" class="form-control col-6" id="email" placeholder="name@example.com">
+            </div>
+
+            <!-- Experience -->
+            <div class="form-group">
+                <label class="font-weight-bold" style="margin-bottom: 1px;" for="rate">Your Experience<span
+                        class="ast">*</span></label><br>
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                </div><br><br>
+                <label class="small-text font-weight-lighter" for="rate">Overall, How would you rate you experience with
+                    us?</label>
+            </div>
+
+            <!-- How satisfied with you -->
+            <label class="font-weight-bold" style="margin-bottom: 1px;" for="rate">How satisfied are you with<span
+                    class="ast">*</span></label><br>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="col-2 tab-head" scope="col"></th>
+                        <th class="col-2 tab-head" scope="col">Very Unsatisfied</th>
+                        <th class="col-2 tab-head" scope="col">Unsatisfied</th>
+                        <th class="col-2 tab-head" scope="col">Neutral</th>
+                        <th class="col-2 tab-head" scope="col">Satisfied</th>
+                        <th class="col-2 tab-head" scope="col">Very Satisfied</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Purchase</td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Purchase" value="Very Unsatisfied"
+                                aria-label="...">
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Purchase" value="Unsatisfied" aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Purchase" value="Neutral" aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Purchase" value="Satisfied" aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Purchase" value="Very Satisfied" aria-label="...">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Service</td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Service" value="Very Unsatisfied"
+                                aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Service" value="Satisfied" aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Service" value="Neutral" aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Service" value="Satisfied" aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Service" value="Very Satisfied" aria-label="...">
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Company Overall</td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Company Overall" value="Very Unsatisfied"
+                                aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Company Overall" value="Unsatisfied"
+                                aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Company Overall" value="Neutral" aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Company Overall" value="Satisfied"
+                                aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Company Overall" value="Very Satisfied"
+                                aria-label="...">
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- How likely are you to -->
+            <label class="font-weight-bold" style="margin-bottom: 1px;" for="rate">How likely are you with<span
+                    class="ast">*</span></label><br>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="col-2 tab-head" scope="col"></th>
+                        <th class="col-2 tab-head" scope="col">Very Unlikely</th>
+                        <th class="col-2 tab-head" scope="col">Unlikely</th>
+                        <th class="col-2 tab-head" scope="col">Neutral</th>
+                        <th class="col-2 tab-head" scope="col">likely</th>
+                        <th class="col-2 tab-head" scope="col">Very likely</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Buy from us again</td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Purchase" value="Very Unsatisfied"
+                                aria-label="...">
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Purchase" value="Unsatisfied" aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Purchase" value="Neutral" aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Purchase" value="Satisfied" aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Purchase" value="Very Satisfied" aria-label="...">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Recommend our product to others</td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Service" value="Very Unsatisfied"
+                                aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Service" value="Satisfied" aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Service" value="Neutral" aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Service" value="Satisfied" aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Service" value="Very Satisfied" aria-label="...">
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Recommend our company to others</td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Company Overall" value="Very Unsatisfied"
+                                aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Company Overall" value="Unsatisfied"
+                                aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Company Overall" value="Neutral" aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Company Overall" value="Satisfied"
+                                aria-label="...">
+
+                        </td>
+                        <td class="rad-but">
+                            <input type="radio" name="blankRadio" id="Company Overall" value="Very Satisfied"
+                                aria-label="...">
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Addtional Comments or Sugestion -->
+            <div class="form-group">
+                <label class="font-weight-bold" style="margin-bottom: 1px;" for="rate">Additional comments or
+                    suggestions</label><br>
+                <textarea class="form-control" id="comments" rows="3"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="submit-button">
+                <button class="sub_but" type="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
